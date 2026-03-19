@@ -61,8 +61,6 @@ Where:
 - `L_energy` → enforces total energy conservation  
 - `L_centroid` → preserves spatial energy distribution  
 
-> Careful loss balancing is critical — excessive physics constraints can destabilize training.
-
 ---
 
 ## Training Strategy
@@ -85,10 +83,10 @@ This staged approach improves stability and interpretability.
 ## Results
 
 ### Baseline Output
-![Baseline](results/baseline.png)
+![Baseline](results/baseline SR.png)
 
 ### GAN + PINN Output
-![PINN](results/pinn.png)
+![PINN](results/pinn_output.png)
 
 ---
 
