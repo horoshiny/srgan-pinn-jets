@@ -1,4 +1,4 @@
-# Physics-Informed Super-Resolution of Calorimeter Jet Images
+# Physics-Informed GANs for Super-Resolution of Calorimeter Jet Images with Uncertainty Estimation
 
 This project focuses on reconstructing high-resolution (125×125) calorimeter jet images from low-resolution inputs using a hybrid deep learning framework that combines **Generative Adversarial Networks (GANs)** and **Physics-Informed Neural Networks (PINNs)**.
 
