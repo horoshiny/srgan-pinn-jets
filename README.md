@@ -4,7 +4,6 @@ This project focuses on reconstructing high-resolution (125×125) calorimeter je
 
 The goal is to produce reconstructions that are not only visually accurate but also **physically consistent and scientifically meaningful**.
 
----
 
 ## Problem Statement
 
@@ -15,7 +14,7 @@ Standard super-resolution models optimize pixel-wise similarity but often fail t
 - Spatial energy distribution  
 - Jet structure integrity  
 
----
+
 
 ## Approach
 
@@ -26,7 +25,7 @@ A standard super-resolution CNN trained using pixel-wise loss (MSE / L1).
 - Serves as a reference benchmark  
 - Optimizes reconstruction accuracy but ignores physical constraints  
 
----
+
 
 ### 2. GAN + PINN Model (Proposed)
 
@@ -40,7 +39,6 @@ This allows the model to balance:
 - **Visual realism** (GAN)
 - **Physical correctness** (energy + structure preservation)
 
----
 
 ## Model Design
 
@@ -61,7 +59,6 @@ Where:
 - `L_energy` → enforces total energy conservation  
 - `L_centroid` → preserves spatial energy distribution  
 
----
 
 ## Training Strategy
 
@@ -78,14 +75,12 @@ Training is performed in stages:
 
 This staged approach improves stability and interpretability.
 
----
 
 ## Results
 
 ### GAN + PINN Output
 ![PINN](results/pinn_output.png)
 
----
 
 ## Observations
 
@@ -96,7 +91,6 @@ This staged approach improves stability and interpretability.
 
 > The model prioritizes **physical fidelity over pixel-wise similarity**, which is critical in scientific applications.
 
----
 
 ## Limitations
 
@@ -104,7 +98,6 @@ This staged approach improves stability and interpretability.
 - GAN not fully utilized for high-frequency detail generation  
 - Loss balancing remains a key challenge  
 
----
 
 ## Future Work
 
@@ -117,7 +110,6 @@ This staged approach improves stability and interpretability.
 
 This will enable the model to **identify its own failure regions**, improving reliability in scientific workflows.
 
----
 
 ## How to Run
 
