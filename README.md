@@ -82,9 +82,6 @@ This staged approach improves stability and interpretability.
 
 ## Results
 
-### Baseline Output
-![Baseline](results/baseline SR.png)
-
 ### GAN + PINN Output
 ![PINN](results/pinn_output.png)
 
